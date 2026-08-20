@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>LastDone Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f6f2e9;
+      --card: #fffdf8;
+      --text: #15211d;
+      --muted: #5f6964;
+      --accent: #23745c;
+      --line: rgba(21, 33, 29, 0.13);
+      --shadow: 0 16px 44px rgba(28, 52, 43, 0.09);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #101613;
+        --card: #18211d;
+        --text: #f4f7f5;
+        --muted: #b7c0bc;
+        --accent: #77d1ae;
+        --line: rgba(244, 247, 245, 0.14);
+        --shadow: none;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(780px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    header { margin-bottom: 28px; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 { letter-spacing: -0.025em; line-height: 1.15; }
+    h1 { margin: 8px 0 12px; font-size: clamp(2.35rem, 8vw, 4rem); }
+    h2 { margin: 0 0 10px; font-size: 1.35rem; }
+    p { margin: 0 0 12px; }
+    ul { margin: 8px 0 0; padding-left: 1.25rem; }
+    li + li { margin-top: 6px; }
+
+    .intro { color: var(--muted); font-size: 1.08rem; max-width: 640px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    section.wide { grid-column: 1 / -1; }
+    .muted { color: var(--muted); }
+
+    a {
+      color: var(--accent);
+      font-weight: 650;
+      text-underline-offset: 3px;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .contact { color: #10251d; }
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      main { padding-top: 36px; }
+      .grid { grid-template-columns: 1fr; }
+      section.wide { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">LastDone</div>
+      <h1>Support</h1>
+      <p class="intro">LastDone remembers when recurring tasks were handled, shows what is due next, and keeps the experience private and simple.</p>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>Getting started</h2>
+        <ul>
+          <li>Create a task, choose its recurrence, and optionally enable a reminder.</li>
+          <li>Mark it done to record the actual completion time and calculate its next cycle.</li>
+          <li>Use <strong>Skip This Cycle</strong> when a task does not apply, or <strong>Pause Until</strong> when it should disappear temporarily.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Your data</h2>
+        <p>LastDone 1.0 keeps task data on your device. It does not require an account and does not include developer-operated cloud sync.</p>
+        <p><a href="privacy.html">Read the Privacy Policy</a></p>
+      </section>
+
+      <section>
+        <h2>Notifications</h2>
+        <p>Open LastDone Settings to check reminder status. If alerts are disabled, open iOS Settings → Notifications → LastDone and allow notifications and alerts.</p>
+        <p class="muted">Delivery timing is ultimately controlled by iOS, Focus modes, and notification-summary settings.</p>
+      </section>
+
+      <section>
+        <h2>Widgets</h2>
+        <p>Open LastDone once after installing or updating, then add the LastDone widget from the Home Screen widget gallery. If it looks stale, open LastDone to refresh its local snapshot.</p>
+      </section>
+
+      <section>
+        <h2>Siri and Shortcuts</h2>
+        <p>Open Apple’s Shortcuts app, search for LastDone, and add or run an available action. Examples include “What’s due today in LastDone?” and “When is [task] due in LastDone?”</p>
+        <p class="muted">Siri language support and phrasing can vary by device language and OS version.</p>
+      </section>
+
+      <section>
+        <h2>Apple Watch</h2>
+        <p>The iPhone is the source of truth. Keep the paired iPhone nearby and open LastDone on both devices after installing. Watch actions are sent back to the iPhone and may wait until connectivity returns.</p>
+      </section>
+
+      <section class="wide">
+        <h2>Accessibility</h2>
+        <p>LastDone is designed to follow system text sizing, light and dark appearances, Reduce Motion, Increase Contrast, Differentiate Without Color, VoiceOver, and Voice Control. The Apple Watch experience uses the accessibility features available on watchOS.</p>
+        <p>If a common task is difficult with an accessibility setting enabled, please report the screen, setting, device, and what you expected to happen.</p>
+      </section>
+
+      <section class="wide">
+        <h2>Contact support</h2>
+        <p>Email <a href="mailto:ravinapps@icloud.com">ravinapps@icloud.com</a> with the LastDone version, iOS or watchOS version, device model, steps to reproduce, expected result, and actual result.</p>
+        <p class="muted">Please do not include private task names, notes, or other sensitive information unless it is necessary to explain the issue.</p>
+        <a class="contact" href="mailto:ravinapps@icloud.com?subject=LastDone%20Support">Email LastDone Support</a>
+      </section>
+    </div>
+
+    <footer>
+      LastDone is provided by Ravin Shah. This page contains no analytics, cookies, advertising, or contact form.
+    </footer>
+  </main>
+</body>
+</html>
