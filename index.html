@@ -4,27 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>LastDone Support</title>
+  <meta name="description" content="Hearthlet support, privacy, and help with personal and shared household care.">
+  <link rel="icon" href="hearthlet.svg" type="image/svg+xml">
+  <title>Hearthlet Support</title>
   <style>
     :root {
       color-scheme: light dark;
-      --page: #f6f2e9;
-      --card: #fffdf8;
-      --text: #15211d;
-      --muted: #5f6964;
-      --accent: #23745c;
-      --line: rgba(21, 33, 29, 0.13);
+      --page: #fff5ec;
+      --card: #fffcf8;
+      --text: #17243c;
+      --muted: #6b6267;
+      --accent: #b23638;
+      --line: rgba(23, 36, 60, 0.13);
       --shadow: 0 16px 44px rgba(28, 52, 43, 0.09);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --page: #101613;
-        --card: #18211d;
-        --text: #f4f7f5;
-        --muted: #b7c0bc;
-        --accent: #77d1ae;
-        --line: rgba(244, 247, 245, 0.14);
+        --page: #141218;
+        --card: #211c23;
+        --text: #fff9f4;
+        --muted: #c7bbc2;
+        --accent: #ffaaa0;
+        --line: rgba(255, 249, 244, 0.14);
         --shadow: none;
       }
     }
@@ -45,6 +47,8 @@
     }
 
     header { margin-bottom: 28px; }
+
+    .brand-mark { width: 52px; height: 52px; display: block; margin-bottom: 16px; }
 
     .eyebrow {
       color: var(--accent);
@@ -97,7 +101,7 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      .contact { color: #10251d; }
+      .contact { color: #2b1119; }
     }
 
     footer {
@@ -117,9 +121,11 @@
 <body>
   <main>
     <header>
-      <div class="eyebrow">LastDone</div>
+      <img class="brand-mark" src="hearthlet.svg" alt="" width="52" height="52">
+      <div class="eyebrow">Hearthlet</div>
       <h1>Support</h1>
-      <p class="intro">LastDone remembers when recurring tasks were handled, shows what is due next, and keeps the experience private and simple.</p>
+      <p class="intro">Hearthlet helps you care for home and family tasks, remember what was last done, and see what needs attention next.</p>
+      <p class="muted">Hearthlet is the new name for LastDone. Older builds may still show the previous name.</p>
     </header>
 
     <div class="grid">
@@ -134,49 +140,63 @@
 
       <section>
         <h2>Your data</h2>
-        <p>LastDone 1.0 keeps task data on your device. It does not require an account and does not include developer-operated cloud sync.</p>
+        <p>Personal tasks stay on your device, with optional iCloud Drive backup in supported builds. Household sharing uses Apple’s iCloud accounts and only includes tasks you explicitly share. Each person keeps their own reminder settings. No separate Hearthlet account is required.</p>
         <p><a href="privacy.html">Read the Privacy Policy</a></p>
       </section>
 
       <section>
         <h2>Notifications</h2>
-        <p>Open LastDone Settings to check reminder status. If alerts are disabled, open iOS Settings → Notifications → LastDone and allow notifications and alerts.</p>
+        <p>Open Hearthlet Settings to check reminder status. If alerts are disabled, open iOS Settings → Notifications → Hearthlet and allow notifications and alerts.</p>
         <p class="muted">Delivery timing is ultimately controlled by iOS, Focus modes, and notification-summary settings.</p>
       </section>
 
       <section>
         <h2>Widgets</h2>
-        <p>Open LastDone once after installing or updating, then add the LastDone widget from the Home Screen widget gallery. If it looks stale, open LastDone to refresh its local snapshot.</p>
+        <p>Open Hearthlet once after installing or updating, then add the Hearthlet widget from the Home Screen widget gallery. If it looks stale, open Hearthlet to refresh its local snapshot.</p>
       </section>
 
       <section>
         <h2>Siri and Shortcuts</h2>
-        <p>Open Apple’s Shortcuts app, search for LastDone, and add or run an available action. Examples include “What’s due today in LastDone?” and “When is [task] due in LastDone?”</p>
+        <p>Open Apple’s Shortcuts app, search for Hearthlet, and add or run an available action. Examples include “What’s due today in Hearthlet?” and “When is [task] due in Hearthlet?”</p>
         <p class="muted">Siri language support and phrasing can vary by device language and OS version.</p>
       </section>
 
       <section>
         <h2>Apple Watch</h2>
-        <p>The iPhone is the source of truth. Keep the paired iPhone nearby and open LastDone on both devices after installing. Watch actions are sent back to the iPhone and may wait until connectivity returns.</p>
+        <p>The iPhone is the source of truth. Keep the paired iPhone nearby and open Hearthlet on both devices after installing. Watch actions are sent back to the iPhone and may wait until connectivity returns.</p>
+      </section>
+
+      <section class="wide">
+        <h2>Household sharing</h2>
+        <p>Open <strong>Settings → Household</strong>, choose a name, and tap <strong>Create Household</strong>. Use <strong>Invite &amp; Manage People</strong> to invite family or your partner through iCloud. Share individual tasks from their details. Existing tasks stay personal until you choose to share them.</p>
+        <p>Both people need iCloud and compatible app versions. To join, open the owner’s iCloud invitation on your iPhone. After reinstalling, expand <strong>Joining or returning?</strong> and choose <strong>Find My Household in iCloud</strong>. In an existing household, use <strong>Sync Now</strong> if changes are waiting.</p>
+        <p class="muted">Older LastDone 1.0 builds do not include app-level iCloud backup or household sharing.</p>
+      </section>
+
+      <section class="wide">
+        <h2>Household setup needs attention</h2>
+        <p>Check that iCloud is signed in and that your iPhone has an internet connection, then update Hearthlet and try Create Household again. A setup retry resumes the same household on that iPhone. If it still fails, contact support with the app version and a screenshot of the message.</p>
+        <p class="muted">Personal tasks remain available while household setup is incomplete. You do not need to delete the app or reset your task library.</p>
       </section>
 
       <section class="wide">
         <h2>Accessibility</h2>
-        <p>LastDone is designed to follow system text sizing, light and dark appearances, Reduce Motion, Increase Contrast, Differentiate Without Color, VoiceOver, and Voice Control. The Apple Watch experience uses the accessibility features available on watchOS.</p>
+        <p>Hearthlet is designed to follow system text sizing, light and dark appearances, Reduce Motion, Increase Contrast, Differentiate Without Color, VoiceOver, and Voice Control. The Apple Watch experience uses the accessibility features available on watchOS.</p>
         <p>If a common task is difficult with an accessibility setting enabled, please report the screen, setting, device, and what you expected to happen.</p>
       </section>
 
       <section class="wide">
         <h2>Contact support</h2>
-        <p>Email <a href="mailto:ravinapps@icloud.com">ravinapps@icloud.com</a> with the LastDone version, iOS or watchOS version, device model, steps to reproduce, expected result, and actual result.</p>
+        <p>Email <a href="mailto:ravinapps@icloud.com">ravinapps@icloud.com</a> with the Hearthlet version, iOS or watchOS version, device model, steps to reproduce, expected result, and actual result.</p>
         <p class="muted">Please do not include private task names, notes, or other sensitive information unless it is necessary to explain the issue.</p>
-        <a class="contact" href="mailto:ravinapps@icloud.com?subject=LastDone%20Support">Email LastDone Support</a>
+        <a class="contact" href="mailto:ravinapps@icloud.com?subject=Hearthlet%20Support">Email Hearthlet Support</a>
       </section>
     </div>
 
     <footer>
-      LastDone is provided by Ravin Shah. This page contains no analytics, cookies, advertising, or contact form.
+      Hearthlet is provided by Ravin Shah. This page contains no analytics, cookies, advertising, or contact form.
     </footer>
   </main>
 </body>
 </html>
+
