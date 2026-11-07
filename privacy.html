@@ -4,26 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Hearthlet support, privacy, and help with personal and shared household care.">
+  <link rel="icon" href="hearthlet.svg" type="image/svg+xml">
   <title>Hearthlet Privacy Policy</title>
   <style>
     :root {
       color-scheme: light dark;
-      --page: #f6f2e9;
-      --card: #fffdf8;
-      --text: #15211d;
-      --muted: #5f6964;
-      --accent: #23745c;
-      --line: rgba(21, 33, 29, 0.13);
+      --page: #fff5ec;
+      --card: #fffcf8;
+      --text: #17243c;
+      --muted: #6b6267;
+      --accent: #b23638;
+      --line: rgba(23, 36, 60, 0.13);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --page: #101613;
-        --card: #18211d;
-        --text: #f4f7f5;
-        --muted: #b7c0bc;
-        --accent: #77d1ae;
-        --line: rgba(244, 247, 245, 0.14);
+        --page: #141218;
+        --card: #211c23;
+        --text: #fff9f4;
+        --muted: #c7bbc2;
+        --accent: #ffaaa0;
+        --line: rgba(255, 249, 244, 0.14);
       }
     }
 
@@ -48,6 +50,8 @@
       border-radius: 24px;
       padding: clamp(24px, 6vw, 52px);
     }
+
+    .brand-mark { width: 52px; height: 52px; display: block; margin-bottom: 16px; }
 
     .eyebrow {
       color: var(--accent);
@@ -87,6 +91,7 @@
 <body>
   <main>
     <article>
+      <img class="brand-mark" src="hearthlet.svg" alt="" width="52" height="52">
       <div class="eyebrow">Hearthlet</div>
       <h1>Privacy Policy</h1>
       <p class="updated">Updated November 6, 2026</p>
@@ -107,7 +112,7 @@
         <li><strong>Personal backup:</strong> If enabled in a supported build, a recovery archive of personal tasks and preferences is stored in your iCloud Drive. It excludes household membership and shared-task caches.</li>
         <li><strong>Household sharing:</strong> Creating a household does not automatically share existing tasks. Explicitly shared tasks include their titles, schedules, room information, notes, care notes and history. Shared actions may include your chosen display name and CloudKit identity so invited members can see who acted.</li>
         <li><strong>Individual reminders:</strong> Reminder enablement, alert time and lead time are kept on each participant’s device and are not included in household records.</li>
-        <li><strong>Apple services:</strong> Sharing uses private CloudKit invitations and Apple’s account, access-control and notification services. Apple processes that data under its own terms. We do not upload your contact list or operate a separate sharing server.</li>
+        <li><strong>Apple services:</strong> Sharing uses private CloudKit invitations and Apple’s account, access-control and notification services. Apple processes that data under its own terms and <a href="https://www.apple.com/legal/privacy/">privacy policy</a>. We do not upload your contact list or operate a separate sharing server.</li>
       </ul>
 
       <h2>Widgets, Apple Watch, Siri, and notifications</h2>
@@ -135,7 +140,7 @@
       <h2>Data retention and deletion</h2>
       <p>Tasks moved to Recently Deleted remain recoverable for up to 30 days unless you permanently delete them sooner. Shared task deletion is synchronized to household members when connectivity permits; limited deletion markers are retained to prevent stale devices from recreating removed tasks.</p>
 
-      <p>Removing the app normally removes its local container, subject to Apple’s backup and restore behavior. It does not automatically delete iCloud backups or household data. Manage sharing through Household in Settings and backup storage through your iCloud settings. When an owner stops sharing, the app keeps a personal copy; a participant leaving removes their local household copy. Other people may already have copied information they were authorized to see.</p>
+      <p>Removing the app normally removes its local container, subject to Apple’s backup and restore behavior. It does not automatically delete iCloud backups or household data. Manage sharing through Household in Settings and backup storage through your iCloud settings. When an owner stops sharing, the app keeps a personal copy; a participant leaving removes their local household copy. Ending a share revokes access for other members, but the owner’s private iCloud records may remain. Pending changes and local reminder choices are tied to the original iCloud account and are not uploaded to a different account after sign-out. Other people may already have copied information they were authorized to see.</p>
       <p>Older iCloud backups may retain previous personal task data until those backups are replaced or deleted. Because we do not operate the task storage service, support cannot recover or delete your iCloud library for you.</p>
 
       <h2>Children</h2>

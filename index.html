@@ -4,27 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Hearthlet support, privacy, and help with personal and shared household care.">
+  <link rel="icon" href="hearthlet.svg" type="image/svg+xml">
   <title>Hearthlet Support</title>
   <style>
     :root {
       color-scheme: light dark;
-      --page: #f6f2e9;
-      --card: #fffdf8;
-      --text: #15211d;
-      --muted: #5f6964;
-      --accent: #23745c;
-      --line: rgba(21, 33, 29, 0.13);
+      --page: #fff5ec;
+      --card: #fffcf8;
+      --text: #17243c;
+      --muted: #6b6267;
+      --accent: #b23638;
+      --line: rgba(23, 36, 60, 0.13);
       --shadow: 0 16px 44px rgba(28, 52, 43, 0.09);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --page: #101613;
-        --card: #18211d;
-        --text: #f4f7f5;
-        --muted: #b7c0bc;
-        --accent: #77d1ae;
-        --line: rgba(244, 247, 245, 0.14);
+        --page: #141218;
+        --card: #211c23;
+        --text: #fff9f4;
+        --muted: #c7bbc2;
+        --accent: #ffaaa0;
+        --line: rgba(255, 249, 244, 0.14);
         --shadow: none;
       }
     }
@@ -45,6 +47,8 @@
     }
 
     header { margin-bottom: 28px; }
+
+    .brand-mark { width: 52px; height: 52px; display: block; margin-bottom: 16px; }
 
     .eyebrow {
       color: var(--accent);
@@ -97,7 +101,7 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      .contact { color: #10251d; }
+      .contact { color: #2b1119; }
     }
 
     footer {
@@ -117,6 +121,7 @@
 <body>
   <main>
     <header>
+      <img class="brand-mark" src="hearthlet.svg" alt="" width="52" height="52">
       <div class="eyebrow">Hearthlet</div>
       <h1>Support</h1>
       <p class="intro">Hearthlet helps you care for home and family tasks, remember what was last done, and see what needs attention next.</p>
@@ -163,9 +168,15 @@
 
       <section class="wide">
         <h2>Household sharing</h2>
-        <p>In household-enabled builds, open Household in Settings to create a household and invite someone through iCloud. Share individual tasks from their details. Existing tasks stay personal until you choose to share them.</p>
-        <p>Both people need iCloud and compatible app versions. Household status shows pending changes or connection issues. Use Sync to retry; after reinstalling, use Find My Household in iCloud to recover an existing household.</p>
+        <p>Open <strong>Settings → Household</strong>, choose a name, and tap <strong>Create Household</strong>. Use <strong>Invite &amp; Manage People</strong> to invite family or your partner through iCloud. Share individual tasks from their details. Existing tasks stay personal until you choose to share them.</p>
+        <p>Both people need iCloud and compatible app versions. To join, open the owner’s iCloud invitation on your iPhone. After reinstalling, expand <strong>Joining or returning?</strong> and choose <strong>Find My Household in iCloud</strong>. In an existing household, use <strong>Sync Now</strong> if changes are waiting.</p>
         <p class="muted">Older LastDone 1.0 builds do not include app-level iCloud backup or household sharing.</p>
+      </section>
+
+      <section class="wide">
+        <h2>Household setup needs attention</h2>
+        <p>Check that iCloud is signed in and that your iPhone has an internet connection, then update Hearthlet and try Create Household again. A setup retry resumes the same household on that iPhone. If it still fails, contact support with the app version and a screenshot of the message.</p>
+        <p class="muted">Personal tasks remain available while household setup is incomplete. You do not need to delete the app or reset your task library.</p>
       </section>
 
       <section class="wide">
