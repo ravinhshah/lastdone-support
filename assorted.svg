@@ -1,6 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-  <rect width="1024" height="1024" rx="240" fill="#fff9f4"/>
-  <path d="M 443 264 C 495 190 548 166 593 213 C 632 253 654 330 685 422 C 731 560 773 686 872 750 C 902 770 903 799 880 818 C 856 839 818 832 782 807 C 680 737 631 603 579 455 C 553 382 530 301 491 300 C 473 299 453 320 432 347 C 408 334 418 299 443 264 Z" fill="#ffd0b9"/>
-  <path d="M 128 752 C 230 711 286 608 330 486 C 366 387 405 276 468 218 C 501 187 541 176 572 197 C 596 213 610 243 615 274 C 591 244 563 239 539 260 C 495 299 470 395 431 502 C 376 652 304 779 193 812 C 153 824 119 814 109 789 C 104 773 113 759 128 752 Z" fill="#ffaaa0"/>
-  <path d="M 266 593 C 342 537 411 518 490 527 C 556 535 617 578 681 566 C 729 557 758 531 787 501 C 801 487 828 494 828 515 C 827 564 774 621 713 642 C 629 670 559 621 484 611 C 417 603 367 622 306 647 C 282 657 257 652 247 634 C 239 617 249 606 266 593 Z" fill="#b23638"/>
+  <title>Assorted house mark</title>
+  <defs>
+    <linearGradient id="paper" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="1024">
+      <stop offset="0" stop-color="#FBF8F3"/>
+      <stop offset="1" stop-color="#EEE7DC"/>
+    </linearGradient>
+    <linearGradient id="roof" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="160.75" y2="449">
+      <stop offset="0" stop-color="#446452"/>
+      <stop offset="1" stop-color="#325142"/>
+    </linearGradient>
+    <linearGradient id="upper-left" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="471" y2="653">
+      <stop offset="0" stop-color="#CD6040"/>
+      <stop offset="1" stop-color="#B84B32"/>
+    </linearGradient>
+    <linearGradient id="upper-right" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="471" y2="653">
+      <stop offset="0" stop-color="#E9AC3E"/>
+      <stop offset="1" stop-color="#D89625"/>
+    </linearGradient>
+    <linearGradient id="lower-left" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="675" y2="857">
+      <stop offset="0" stop-color="#94A583"/>
+      <stop offset="1" stop-color="#7F926D"/>
+    </linearGradient>
+    <linearGradient id="lower-right" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="675" y2="857">
+      <stop offset="0" stop-color="#607F95"/>
+      <stop offset="1" stop-color="#466479"/>
+    </linearGradient>
+    <filter id="depth" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="230" fill="url(#paper)"/>
+  <g filter="url(#depth)" transform="translate(0 8)" opacity=".13">
+    <path fill="#30251B" d="M 222 384 L 463 181 C 495 154 529 154 561 181 L 802 384 C 835 412 820 449 785 449 H 239 C 204 449 189 412 222 384 Z"/>
+    <rect x="190" y="471" width="344" height="182" rx="53" fill="#30251B"/>
+    <rect x="556" y="471" width="278" height="182" rx="53" fill="#30251B"/>
+    <rect x="190" y="675" width="417" height="182" rx="53" fill="#30251B"/>
+    <rect x="629" y="675" width="205" height="182" rx="53" fill="#30251B"/>
+  </g>
+  <path fill="url(#roof)" d="M 222 384 L 463 181 C 495 154 529 154 561 181 L 802 384 C 835 412 820 449 785 449 H 239 C 204 449 189 412 222 384 Z"/>
+  <rect x="190" y="471" width="344" height="182" rx="53" fill="url(#upper-left)"/>
+  <rect x="556" y="471" width="278" height="182" rx="53" fill="url(#upper-right)"/>
+  <rect x="190" y="675" width="417" height="182" rx="53" fill="url(#lower-left)"/>
+  <rect x="629" y="675" width="205" height="182" rx="53" fill="url(#lower-right)"/>
 </svg>
